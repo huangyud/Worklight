@@ -1,0 +1,135 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+        <meta charset="UTF-8">
+	
+        <title>UserInterface</title>
+	
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+	
+        <link href="wlclient/css/wlclient.css" rel="stylesheet">
+        <link href="wlclient/css/wlgap.android.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="shortcut icon">
+	
+        <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+	
+        <link href="css/UserInterface.css" rel="stylesheet">
+	
+        <script>
+
+		// Define WL namespace.
+
+		var WL = WL ? WL : {};
+
+
+
+		/**
+
+		 * WLClient configuration variables.
+
+		 * Values are injected by the deployer that packs the gadget.
+
+		 */
+
+		WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "UserInterface",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/UserInterface\/android\/"
+};</script>
+		<script src="wlclient/js/cordova.js"></script>
+		<script src="common/js/wljq.js"></script>
+		<script src="common/js/base.js"></script>
+		<script src="wlclient/js/messages.js"></script>
+		<script src="common/js/wlcommon.js"></script>
+		<script src="wlclient/js/diagnosticDialog.js"></script>
+		<script src="wlclient/js/deviceAuthentication.js"></script>
+		<script src="wlclient/js/window.js"></script>
+		<script src="wlclient/js/worklight.js"></script>
+		<script src="wlclient/js/wlclient.js"></script>
+		<script src="wlclient/js/wlfragments.js"></script>
+		<script src="wlclient/js/encryptedcache.js"></script>
+		<script src="wlclient/js/jsonstore/jsonstore.js"></script>
+		<script src="wlclient/js/checksum.js"></script>
+		<script src="wlclient/js/challengeHandlers/antiXSRFChallengeHandler.js"></script>
+		<script src="wlclient/js/challengeHandlers/authenticityChallengeHandler.js"></script>
+		<script src="wlclient/js/challengeHandlers/deviceAuthAutoProvisioningChallengeHandler.js"></script>
+		<script src="wlclient/js/challengeHandlers/deviceAuthNoProvisioningChallengeHandler.js"></script>
+		<script src="wlclient/js/challengeHandlers/remoteDisableChallengeHandler.js"></script>
+		<script src="wlclient/js/wlgap.android.js"></script><script>window.$ = window.jQuery = WLJQ;</script>
+	
+        <link href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" rel="stylesheet">
+	
+        <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+
+
+    </head>
+    <body id="content" style="display: none;">
+	
+        <div data-role="page" id="page">
+	
+            <div data-role="panel" id="mypanel">
+    	<!-- panel content goes here -->
+                <ul data-role="listview" data-theme="a">
+	           
+                    <li>
+                        <a href="#">Item A</a>
+                    </li>
+	           
+                    <li>
+                        <a href="#">Item B</a>
+                    </li>
+	           
+                    <li>
+                        <a href="#">Item C</a>
+                    </li>
+                </ul>
+	
+            </div>
+	
+            <div data-role="header">
+	    
+                <a data-icon="bars" href="#mypanel">Menu</a>
+	    
+                <h1>Header</h1>
+                <a data-icon="gear" data-inline="true" data-rel="popup" data-role="button" data-transition="slideup" href="#popupMenu">Option</a>
+                <div data-role="popup" id="popupMenu">
+			
+                    <ul data-inset="true" data-role="listview" style="min-width:210px;">
+				
+                        <li data-role="divider">Choose an option:</li>
+				
+                        <li>
+                            <a href="#">Option A</a>
+                        </li>
+				
+                        <li>
+                            <a href="#">Option B</a>
+                        </li>
+				
+                        <li>
+                            <a href="#">Option C</a>
+                        </li>
+				
+                        <li>
+                            <a href="#">Option D</a>
+                        </li>
+			
+                    </ul>
+                </div>
+	
+            </div>
+	
+            <div data-role="content" style="padding: 15px">
+	
+                <script src="js/initOptions.js"></script>
+	<script src="js/UserInterface.js"></script>
+	<script src="js/messages.js"></script>
+
+            </div>
+        </div>
+    </body>
+</html>

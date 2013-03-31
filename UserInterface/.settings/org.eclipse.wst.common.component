@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="UserInterface">
+        <wb-resource deploy-path="/" source-path="/apps/UserInterface/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/UserInterface/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/UserInterface/mobilewebapp"/>
+        <property name="context-root" value="UserInterface"/>
+    </wb-module>
+</project-modules>
